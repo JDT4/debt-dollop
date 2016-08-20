@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UK Debt Clock</title>
+  <!--NO ICON-->
+  <link rel="icon" type="image/png" href="http://debt-clock.org/img/logo-twitter-flat.png" />
+  <meta name="description" content="Current UK Public Sector Net Debt">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="The Taxpayers' Alliance">
+  <meta property="og:image" content="http://debt-clock.org/img/logo-twitter-flat.png" />
+  <meta property="og:title" content="UK Government Debt Clock" />
+  <meta property="og:description" content="The national debt is the total amount of money the UK Government currently owes. This is different to the deficit, which is the amount of money spent in excess of income. Each year we run a deficit, the national debt grows. It's not merely the huge scale of the national debt that is cause for concern, but also the rate at which it is increasing." />
+  <meta property="og:url" content="http://debt-clock.org" />
+  <meta property="og:site_name" content="UK Debt Clock" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="Resources/bulma.css">
+  <link rel="stylesheet" href="Resources/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" async></script>
+  <script src="https://use.fontawesome.com/bb3394a66c.js" async></script>
+  <script src="Resources/calc.js"></script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="corner-logo">
+    <a href="http://www.taxpayersalliance.com" target="_blank"><img src="Resources/images/logo-corner.png"></a>
+  </div>
+  <section class="hero is-large is-dark is-bold">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="em title">Current UK Public Sector New Debt</h1>
+        <h2 class="title debt">£1,000,000,000,000</h2>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-primary is-small">
+    <div class="hero-body">
+      <div class="container">
+        <h3 class="title">That's equivalent to:</h3>
+        <div class="columns">
+          <div class="column">
+            <p class="person">£1,000</p>
+            <span class="icon is-large">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </span>
+            <p>Per person</p>
+          </div>
+          <div class="column">
+            <p class="household">£1,000</p>
+            <span class="icon is-large">
+                <i class="fa fa-home" aria-hidden="true"></i>
+              </span>
+            <p>Per household</p>
+          </div>
+          <div class="column">
+            <p class="child">£1,000</p>
+            <span class="icon is-large">
+            <i class="fa fa-child" aria-hidden="true"></i>
+            </span>
+            <p>Per child</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-dark is-medium">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h3 class="title">This financial year</h3>
+        <h4 class="title interest">£11,000,000,000</h4>
+        <h3 class="title">has gone to paying debt interest</h3>
+      </div>
+    </div>
+  </section>
+  <div class="containter has-text-centered">
+    <a href="http://www.taxpayersalliance.com" target="_blank"><img class="logo" src="Resources/images/tpa-logo-white.png"></a>
+  </div>
+  <!-- GA -->
+  <script>
+    (function(i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function() {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-40772290-3', 'debt-clock.org');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
