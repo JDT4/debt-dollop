@@ -15,6 +15,24 @@ body {
   z-index: 10;
 }
 
+.moved {
+  margin-top: -0.5em;
+}
+
+.moving {
+  display: inline-block;
+  background-color: #ff0066;
+  padding: 0.2em;
+  box-sizing: padding-box;
+  border-radius: 0.1em;
+  border: 1px solid white
+}
+
+.edit {
+  padding: 0em;
+  padding-bottom: 2em;
+}
+
 .logo {
   height: 5em;
 }
