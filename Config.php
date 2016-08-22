@@ -1,6 +1,6 @@
 <?php
 //1509151415Config
-	//config.php
+
 	$server = 'localhost';
 	$username = 'debtclockdbuser';
 	$password = 'g6gTWwDuB@uK';
@@ -20,8 +20,7 @@
 	else
 	{
 		$error = 0;
-
-		//echo 'Hello!';
+//Assume that this is the problem
 		$sql = "SELECT
 				start_amount,
 				end_amount,
@@ -36,13 +35,11 @@
 
 		if(!$result)
 		{
-			//echo mysql_error();
 			$error = 1;
 			exit;
 		}
 		else
 		{
-			//do something
 			$row = mysql_fetch_array($result);
 
 			$start_amount = $row['start_amount'];
@@ -51,7 +48,7 @@
 
 			//$start_date = strtotime($row['start_date']);
 			//$update_date = strtotime($row['update_date']);
-			//$end_date = strtotime($row['end_date']);
+			//$end_date = strtotime($row['end_date'])
 			$startdate = $row['start_date'];
 			$updatedate = $row['update_date'];
 			$enddate = $row['end_date'];
@@ -60,8 +57,6 @@
 			$update_date = str_replace("-", "/", $updatedate);
 			$end_date = str_replace("-", "/", $enddate);
 			$current_date = str_replace("-", "/", $currentdate);
-
-			//echo $start_amount.'<br/>'.$end_amount.'<br/>'.$interest.'<br/>'.$start_date.'<br/>'.$update_date.'<br/>'.$end_date.'<br/>'.$current_date;
 
 		}
 	}
