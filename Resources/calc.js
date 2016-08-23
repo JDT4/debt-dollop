@@ -51,8 +51,18 @@ function runMath() {
   $('.interest').html('£' + currentinterest);
   document.title = 'Debt Clock | £' + currentdebt;
 }
+/*
+ // A function to set the url of a twitter button to the value of the debt clock on the page load
+ // function setTwitter() {
+ // var a = document.title,
+ // link = document.getElementById("twrr"),
+ // twrrtext ="https://twitter.com/share?url=www.taxpayersalliance.com/debt_clock&amp;text="+ String(a) +"&amp;via=the_tpa";
+ // link.setAttribute("href", twrrtext);
+ // }
+  */
 $(document).ready(function () {
   "use strict";
   runMath();
+  // setTwitter();
   setInterval(runMath, 1000)();
 });
